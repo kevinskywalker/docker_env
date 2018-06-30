@@ -1,4 +1,4 @@
-FROM limansky/talib-python-numpy
+FROM kakadadroid/python-talib
 
 
 # Numpy
