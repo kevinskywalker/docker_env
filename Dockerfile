@@ -1,4 +1,4 @@
-FROM investissima/python-talib
+FROM limansky/talib-python-numpy
 
 
 # Numpy
