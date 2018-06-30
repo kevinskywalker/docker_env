@@ -1,4 +1,4 @@
-FROM kakadadroid/python-talib
+FROM yfeunteun/talib
 
 
 # Numpy
