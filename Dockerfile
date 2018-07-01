@@ -1,9 +1,10 @@
-FROM yfeunteun/talib
-
-
-# Numpy
-RUN pip install requests apscheduler lxml
-RUN pip install pandas tushare
-WORKDIR ~/quant_running
-CMD python datacrawler.py
-
+FROM python:3.5
+RUN apt install gcc
+RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
+  tar -xvzf ta-lib-0.4.0-src.tar.gz && \
+  cd ta-lib/ && \
+  ./configure --prefix=/usr && \
+  make && \
+  make install
+RUN pip install numpy 
+RUN pip install ta-lib
