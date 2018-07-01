@@ -6,5 +6,7 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
   ./configure --prefix=/usr && \
   make && \
   make install
-RUN pip install numpy 
+RUN pip install numpy pandas lxml 
+RUN pip install tushare apscheduler
 RUN pip install ta-lib
+
