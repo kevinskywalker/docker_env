@@ -1,5 +1,5 @@
-FROM python:3.5
-RUN apt install gcc
+FROM centos/python-35-centos7
+RUN yum -y install gcc
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
   tar -xvzf ta-lib-0.4.0-src.tar.gz && \
   cd ta-lib/ && \
