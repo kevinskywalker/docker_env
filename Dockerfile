@@ -13,7 +13,7 @@ RUN apt-get install -y git
 RUN apt-get install wget
 
 # Latest versions of python tools via pip
-RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
   tar -xvzf ta-lib-0.4.0-src.tar.gz && \
   cd ta-lib/ && \
