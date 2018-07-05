@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
 
 # General dev tools
 RUN apt-get install -y git
+RUN apt-get install wget
 
 # Latest versions of python tools via pip
 RUN pip install --upgrade pip
